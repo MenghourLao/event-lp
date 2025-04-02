@@ -15,27 +15,34 @@
   </style>
 </head>
 <body class="bg-black text-white font-sans">
-  <nav class="flex justify-between items-center px-6 py-4 bg-black bg-opacity-80">
-    <div class="text-xl font-bold">
+  <nav class="flex flex-wrap justify-between items-center px-6 py-4 bg-black bg-opacity-80">
+    <div class="w-full md:w-auto flex justify-between items-center">
       <img src="https://github.com/user-attachments/assets/54f56789-bb72-4b01-914f-4fa979ec02ea" alt="BookMe+ Logo" class="h-8">
+      <button class="md:hidden ml-auto text-white focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
     </div>
-    <div class="space-x-4">
-      <a href="#" class="text-white hover:text-purple-400">Home</a>
-      <a href="#" class="text-white hover:text-purple-400">Case Studies</a>
-      <a href="#" class="text-white hover:text-purple-400">Pricing</a>
-      <a href="#" class="text-white hover:text-purple-400">Contact</a>
+    <div class="hidden md:flex md:items-center md:space-x-4 w-full md:w-auto mt-4 md:mt-0">
+      <a href="#" class="text-white hover:text-[#5D54D9]">Home</a>
+      <a href="#" class="text-white hover:text-[#5D54D9]">Case Studies</a>
+      <a href="#" class="text-white hover:text-[#5D54D9]">Pricing</a>
+      <a href="#" class="text-white hover:text-[#5D54D9]">Contact</a>
     </div>
-    <button class="border border-[#5D54D9] text-[#5D54D9] py-2 px-4 rounded-full hover:bg-[#5D54D9] hover:text-white transition">Sell your ticket</button>
+    <div class="hidden md:block mt-4 md:mt-0">
+      <button class="border border-[#5D54D9] text-[#5D54D9] py-2 px-4 rounded-full hover:bg-[#5D54D9] hover:text-white transition">Sell your ticket</button>
+    </div>
   </nav>
 
-  <header class="text-center bg-cover bg-center py-24" style="background-image: url('https://github.com/user-attachments/assets/8952b95d-8d9c-4a8e-a83c-372b167840b0');">
-    <h1 class="text-4xl md:text-5xl font-bold leading-snug">Reach a Massive Audience<br>Sell Out Your Next Event</h1>
+  <header class="text-center bg-cover bg-center py-24 px-4" style="background-image: url('https://github.com/user-attachments/assets/8952b95d-8d9c-4a8e-a83c-372b167840b0');">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug">Reach a Massive Audience<br>Sell Out Your Next Event</h1>
     <button class="mt-6 bg-custom-purple hover:bg-custom-purple-dark text-white px-6 py-3 rounded-full text-sm">Sell your ticket now</button>
   </header>
 
-  <section class="py-16 bg-zinc-900 text-center">
+  <section class="py-16 bg-zinc-900 text-center px-4">
     <h2 class="text-2xl font-semibold mb-10">Our Awesome Organizers</h2>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 px-6">
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
       <div class="bg-zinc-800 py-6 rounded flex justify-center items-center h-24">
         <img src="https://github.com/user-attachments/assets/59d42eea-2d55-40b9-a161-29edc3c48b2c" alt="SAI Logo" class="h-12">
       </div>
@@ -57,9 +64,9 @@
     </div>
   </section>
 
-  <section class="py-16 text-center">
+  <section class="py-16 text-center px-4">
     <h2 class="text-2xl font-semibold mb-10">Event Organizers love BookMe+</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       <div class="bg-zinc-800 p-6 rounded">Sell and manage tickets</div>
       <div class="bg-zinc-800 p-6 rounded">Organize app</div>
       <div class="bg-zinc-800 p-6 rounded">Data analytics</div>
@@ -67,9 +74,9 @@
     </div>
   </section>
 
-  <section class="py-16 bg-zinc-900 text-center">
+  <section class="py-16 bg-zinc-900 text-center px-4">
     <h2 class="text-2xl font-semibold mb-10">Experience features you'll simply love</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       <div class="bg-zinc-800 p-6 rounded">Smart User Engagement</div>
       <div class="bg-zinc-800 p-6 rounded">Custom Event Experience</div>
       <div class="bg-zinc-800 p-6 rounded">Easy guest check-in</div>
@@ -77,9 +84,9 @@
     </div>
   </section>
 
-  <section class="py-16 text-center">
+  <section class="py-16 text-center px-4">
     <h2 class="text-2xl font-semibold mb-10">Sell tickets for any event like <span class="text-[#5D54D9]">Sports</span></h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       <div class="bg-zinc-800 p-6 rounded">Concerts</div>
       <div class="bg-zinc-800 p-6 rounded">Sports</div>
       <div class="bg-zinc-800 p-6 rounded">Workshop & Classes</div>
