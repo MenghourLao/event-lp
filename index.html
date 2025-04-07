@@ -17,7 +17,7 @@
 </head>
 <body class="bg-black text-white font-sans">
 
-<nav class="flex flex-wrap justify-between items-center px-6 py-4 bg-black bg-opacity-80">
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/30 transition duration-300 flex flex-wrap justify-between items-center px-6 py-4">
   <div class="w-full md:w-auto flex justify-between items-center">
     <img src="https://github.com/user-attachments/assets/54f56789-bb72-4b01-914f-4fa979ec02ea" alt="BookMe+ Logo" class="h-8">
     <button class="md:hidden ml-auto text-white focus:outline-none">
@@ -33,67 +33,46 @@
     <a href="#" class="text-white hover:text-[#5D54D9]">Contact</a>
   </div>
   <div class="hidden md:block mt-4 md:mt-0">
-    <button class="border border-[#5D54D9] text-[#5D54D9] py-2 px-4 rounded-full hover:bg-[#5D54D9] hover:text-white transition">Sell your ticket</button>
+    <button class="bg-white text-[#5D54D9] font-semibold py-2 px-4 rounded-full hover:bg-[#5D54D9] hover:text-white transition">Sell your ticket</button>
   </div>
 </nav>
 
-<header class="text-center bg-cover bg-center py-24 px-4" style="background-image: url('https://github.com/user-attachments/assets/8952b95d-8d9c-4a8e-a83c-372b167840b0');">
+<header class="text-center bg-cover bg-center h-[600px] flex flex-col justify-center items-center px-4" style="background-image: url('https://github.com/user-attachments/assets/8952b95d-8d9c-4a8e-a83c-372b167840b0');">
   <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug">Reach a Massive Audience<br>Sell Out Your Next Event</h1>
   <button class="mt-6 bg-custom-purple hover:bg-custom-purple-dark text-white px-6 py-3 rounded-full text-sm">Sell your ticket now</button>
 </header>
 
-<section class="py-16 bg-zinc-900 text-center px-4">
-  <h2 class="text-2xl font-semibold mb-10">Our Awesome Organizers</h2>
-  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
-    <div class="bg-zinc-800 py-6 rounded flex justify-center items-center h-24">
-      <img src="https://github.com/user-attachments/assets/59d42eea-2d55-40b9-a161-29edc3c48b2c" alt="SAI Logo" class="h-12">
-    </div>
-    <div class="bg-zinc-800 py-6 rounded flex justify-center items-center h-24">
-      <img src="https://github.com/user-attachments/assets/85002531-7075-4dfe-a39a-bd5da0dde2d2" alt="CODEC Logo" class="h-12">
-    </div>
-    <div class="bg-zinc-800 py-6 rounded flex justify-center items-center h-24">
-      <img src="https://github.com/user-attachments/assets/3c0828d7-9503-4249-a589-9b304cfa683d" alt="Sabay Logo" class="h-12">
-    </div>
-    <div class="bg-zinc-800 py-6 rounded flex justify-center items-center h-24">
-      <img src="https://github.com/user-attachments/assets/66dab664-db1c-48a5-9637-0ffee8b494ee" alt="The Platform Logo" class="h-12">
-    </div>
-    <div class="bg-zinc-800 py-6 rounded flex justify-center items-center h-24">
-      <img src="https://github.com/user-attachments/assets/56266708-d813-434a-8074-09104138e09c" alt="TED Logo" class="h-12">
-    </div>
-    <div class="bg-zinc-800 py-6 rounded flex justify-center items-center h-24">
-      <div class="text-white">MO-gle</div>
+<section class="py-16 bg-black text-center">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-4">Our Awesome Organizers</h2>
+    <p class="text-gray-400 max-w-2xl mx-auto mb-12">
+      In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac sagittis ultricies, metus leo pharetra m
+    </p>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+      <div class="border border-zinc-700 bg-black rounded-xl flex justify-center items-center h-28 hover:shadow-md transition">
+        <img src="https://github.com/user-attachments/assets/59d42eea-2d55-40b9-a161-29edc3c48b2c" alt="SAI Logo" class="h-10">
+      </div>
+      <div class="border border-zinc-700 bg-black rounded-xl flex justify-center items-center h-28 hover:shadow-md transition">
+        <img src="https://github.com/user-attachments/assets/85002531-7075-4dfe-a39a-bd5da0dde2d2" alt="CODEC Logo" class="h-10">
+      </div>
+      <div class="border border-zinc-700 bg-black rounded-xl flex justify-center items-center h-28 hover:shadow-md transition">
+        <img src="https://github.com/user-attachments/assets/3c0828d7-9503-4249-a589-9b304cfa683d" alt="Sabay Logo" class="h-10">
+      </div>
+      <div class="border border-zinc-700 bg-black rounded-xl flex justify-center items-center h-28 hover:shadow-md transition">
+        <img src="https://github.com/user-attachments/assets/66dab664-db1c-48a5-9637-0ffee8b494ee" alt="The Platform Logo" class="h-10">
+      </div>
+      <div class="border border-zinc-700 bg-black rounded-xl flex justify-center items-center h-28 hover:shadow-md transition">
+        <img src="https://github.com/user-attachments/assets/56266708-d813-434a-8074-09104138e09c" alt="TED Logo" class="h-10">
+      </div>
+      <div class="border border-zinc-700 bg-black rounded-xl flex justify-center items-center h-28 hover:shadow-md transition">
+        <img src="https://github.com/user-attachments/assets/3c0828d7-9503-4249-a589-9b304cfa683d" alt="MO-gle Logo" class="h-10">
+      </div>
     </div>
   </div>
 </section>
 
-  <section class="py-16 text-center px-4">
-    <h2 class="text-2xl font-semibold mb-10">Event Organizers love BookMe+</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="bg-zinc-800 p-6 rounded">
-        <img src="https://source.unsplash.com/random/300x200?ticket" alt="Sell and manage tickets" class="rounded mb-4 w-full h-40 object-cover">
-        <h3 class="text-lg font-medium mb-2">Sell and manage tickets</h3>
-        <p class="text-sm text-gray-400">Handle your event sales effortlessly in one place.</p>
-      </div>
-      <div class="bg-zinc-800 p-6 rounded">
-        <img src="https://source.unsplash.com/random/300x200?mobile-app" alt="Organize app" class="rounded mb-4 w-full h-40 object-cover">
-        <h3 class="text-lg font-medium mb-2">Organize app</h3>
-        <p class="text-sm text-gray-400">Streamline event operations through our mobile tools.</p>
-      </div>
-      <div class="bg-zinc-800 p-6 rounded">
-        <img src="https://source.unsplash.com/random/300x200?data" alt="Data analytics" class="rounded mb-4 w-full h-40 object-cover">
-        <h3 class="text-lg font-medium mb-2">Data analytics</h3>
-        <p class="text-sm text-gray-400">Get real-time insights to optimize your performance.</p>
-      </div>
-      <div class="bg-zinc-800 p-6 rounded">
-        <img src="https://source.unsplash.com/random/300x200?automation" alt="Integration & Automation" class="rounded mb-4 w-full h-40 object-cover">
-        <h3 class="text-lg font-medium mb-2">Integration & Automation</h3>
-        <p class="text-sm text-gray-400">Connect with tools you love and automate workflows.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-16 bg-zinc-900 text-center px-4">
-    <h2 class="text-2xl font-semibold mb-10">Experience features you'll simply love</h2>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  Experience features you'll simply love</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       <div class="bg-zinc-800 p-6 rounded">
         <img src="https://source.unsplash.com/random/300x200?engagement" alt="Smart User Engagement" class="rounded mb-4 w-full h-40 object-cover">
@@ -118,41 +97,114 @@
     </div>
   </section>
 
-  <section class="py-16 text-center px-4">
-    <h2 class="text-2xl font-semibold mb-10">Sell tickets for any event like <span class="text-[#5D54D9]">Sports</span></h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      <div class="bg-zinc-800 p-6 rounded">
-        <img src="https://source.unsplash.com/random/300x200?concert" alt="Concerts" class="rounded mb-4 w-full h-40 object-cover">
-        <h3 class="text-lg font-medium mb-2">Concerts</h3>
-        <p class="text-sm text-gray-400">Live music made seamless with smart ticketing.</p>
+<section class="py-16 text-center">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-2xl font-semibold mb-4">Event Organizers love BookMe+</h2>
+    <p class="text-gray-400 max-w-2xl mx-auto mb-12">
+      In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at,
+      cursus in sem. Nunc condimentum, purus ac sagittis ultricies, metus leo pharetra m
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <div class="w-24 h-24 mx-auto bg-white rounded-full mb-6"></div>
+        <h3 class="font-semibold text-lg mb-2">Sell and manage</h3>
+        <p class="text-sm text-gray-300 max-w-xs mx-auto">
+          This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        </p>
       </div>
-      <div class="bg-zinc-800 p-6 rounded">
-        <img src="https://source.unsplash.com/random/300x200?sports" alt="Sports" class="rounded mb-4 w-full h-40 object-cover">
-        <h3 class="text-lg font-medium mb-2">Sports</h3>
-        <p class="text-sm text-gray-400">Energize the crowd with easy access to matches.</p>
+      <div>
+        <div class="w-24 h-24 mx-auto bg-white rounded-full mb-6"></div>
+        <h3 class="font-semibold text-lg mb-2">Organizer app</h3>
+        <p class="text-sm text-gray-300 max-w-xs mx-auto">
+          This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        </p>
       </div>
-      <div class="bg-zinc-800 p-6 rounded">
-        <img src="https://source.unsplash.com/random/300x200?workshop" alt="Workshop & Classes" class="rounded mb-4 w-full h-40 object-cover">
-        <h3 class="text-lg font-medium mb-2">Workshop & Classes</h3>
-        <p class="text-sm text-gray-400">Streamline learning with professional ticketing tools.</p>
+      <div>
+        <div class="w-24 h-24 mx-auto bg-white rounded-full mb-6"></div>
+        <h3 class="font-semibold text-lg mb-2">Data Analysis</h3>
+        <p class="text-sm text-gray-300 max-w-xs mx-auto">
+          This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        </p>
       </div>
-      <div class="bg-zinc-800 p-6 rounded">
-        <img src="https://source.unsplash.com/random/300x200?art" alt="Arts & Exhibitions" class="rounded mb-4 w-full h-40 object-cover">
-        <h3 class="text-lg font-medium mb-2">Arts & Exhibitions</h3>
-        <p class="text-sm text-gray-400">Promote creativity with a tailored ticketing setup.</p>
-      </div>
-      <div class="bg-zinc-800 p-6 rounded">
-        <img src="https://source.unsplash.com/random/300x200?run" alt="Running Events" class="rounded mb-4 w-full h-40 object-cover">
-        <h3 class="text-lg font-medium mb-2">Running Events</h3>
-        <p class="text-sm text-gray-400">Register participants with speed and clarity.</p>
-      </div>
-      <div class="bg-zinc-800 p-6 rounded">
-        <img src="https://source.unsplash.com/random/300x200?cinema" alt="Cinema" class="rounded mb-4 w-full h-40 object-cover">
-        <h3 class="text-lg font-medium mb-2">Cinema</h3>
-        <p class="text-sm text-gray-400">Bring stories to life with modern ticket experiences.</p>
+      <div>
+        <div class="w-24 h-24 mx-auto bg-white rounded-full mb-6"></div>
+        <h3 class="font-semibold text-lg mb-2">Integration & Customization</h3>
+        <p class="text-sm text-gray-300 max-w-xs mx-auto">
+          This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- Moved Experience Features section -->
+<section class="py-16 bg-black text-center">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-4">Experience features you'll simply love</h2>
+    <p class="text-gray-400 max-w-2xl mx-auto mb-12">
+      In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at,
+      cursus in sem. Nunc condimentum, purus ac sagittis ultricies, metus leo pharetra m
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="border border-zinc-700 rounded-lg p-6 text-center">
+        <div class="w-14 h-14 mx-auto bg-white rounded mb-6"></div>
+        <h3 class="font-semibold text-lg mb-2">Smart User Engagement</h3>
+        <p class="text-sm text-gray-300">Engage with your participants like never before. Our tools streamline interactions, from anonymous Q&A sessions to categorized question groups, making moderation a breeze.</p>
+      </div>
+      <div class="border border-zinc-700 rounded-lg p-6 text-center">
+        <div class="w-14 h-14 mx-auto bg-white rounded mb-6"></div>
+        <h3 class="font-semibold text-lg mb-2 text-gray-300">Embedded E-Commerce feature</h3>
+        <p class="text-sm text-gray-300">Customize the event experience with embedded e-commerce. From selecting gear to doorstep delivery, our system ensures a smooth check-in process, even for marathons with thousands of runners.</p>
+      </div>
+      <div class="border border-zinc-700 rounded-lg p-6 text-center">
+        <div class="w-14 h-14 mx-auto bg-white rounded mb-6"></div>
+        <h3 class="font-semibold text-lg mb-2 text-gray-300">Instant Payout</h3>
+        <p class="text-sm text-gray-300">Say goodbye to long settlement waits. BookMe+ offers instant payouts, ensuring efficient cash flow management for organizers with every ticket purchase.</p>
+      </div>
+      <div class="border border-zinc-700 rounded-lg p-6 text-center">
+        <div class="w-14 h-14 mx-auto bg-white rounded mb-6"></div>
+        <h3 class="font-semibold text-lg mb-2 text-gray-300">Post-Event Data Analysis</h3>
+        <p class="text-sm text-gray-300">Gain valuable insights with our post-event data analysis powered by generative AI. Understand attendee behavior from purchasing journey to session check-ins, and feedback.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 text-center bg-black text-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-4">Sell tickets for any event like <span class="text-[#5D54D9]">Sports</span></h2>
+    <p class="text-gray-400 max-w-2xl mx-auto mb-12">
+      Our expert team specializes in delivering customized solutions that adapt effortlessly to
+      events of any size, ensuring success from start to finish.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="relative rounded-xl overflow-hidden">
+        <img src="https://github.com/MenghourLao/event-lp/blob/main/Concerts.jpg?raw=true" alt="Concerts" class="w-full h-full object-cover">
+        <div class="absolute bottom-4 left-4 text-white font-semibold text-lg">Concerts</div>
+      </div>
+      <div class="relative rounded-xl overflow-hidden">
+        <img src="https://private-user-images.githubusercontent.com/76026690/430900644-32e343ba-b796-4563-b48f-fad12b795666.jpg" alt="Sports" class="w-full h-full object-cover">
+        <div class="absolute bottom-4 left-4 text-white font-semibold text-lg">Sports</div>
+      </div>
+      <div class="relative rounded-xl overflow-hidden">
+        <img src="https://private-user-images.githubusercontent.com/76026690/430900642-415c28f3-a9e3-4821-945b-df44610b6c60.jpg" alt="Workshop & Meetup" class="w-full h-full object-cover">
+        <div class="absolute bottom-4 left-4 text-white font-semibold text-lg">Workshop & Meetup</div>
+      </div>
+      <div class="relative rounded-xl overflow-hidden">
+        <img src="https://private-user-images.githubusercontent.com/76026690/430900647-2381adf5-cccf-4fb3-89dc-1ee9fd720ec1.jpg" alt="Arts & Exhibitions" class="w-full h-full object-cover">
+        <div class="absolute bottom-4 left-4 text-white font-semibold text-lg">Arts & Exhibitions</div>
+      </div>
+      <div class="relative rounded-xl overflow-hidden">
+        <img src="https://private-user-images.githubusercontent.com/76026690/430900648-bfaab978-bd76-4eb9-961d-ab42876842b8.jpg" alt="Fundraising Events" class="w-full h-full object-cover">
+        <div class="absolute bottom-4 left-4 text-white font-semibold text-lg">Fundraising Events</div>
+      </div>
+      <div class="relative rounded-xl overflow-hidden">
+        <img src="https://private-user-images.githubusercontent.com/76026690/430900643-f1019afc-046a-4acc-ae12-95d0a383f8a2.jpg" alt="Live" class="w-full h-full object-cover">
+        <div class="absolute bottom-4 left-4 text-white font-semibold text-lg">Live</div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <section class="py-16 px-4 bg-black text-white">
     <h2 class="text-2xl font-semibold text-center mb-16">Our Workflow from start to end</h2>
@@ -307,5 +359,17 @@
 
 <!-- Footer remains unchanged -->
 
+<script>
+  window.addEventListener('scroll', function () {
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 10) {
+      navbar.classList.remove('bg-black/30');
+      navbar.classList.add('bg-black/80');
+    } else {
+      navbar.classList.remove('bg-black/80');
+      navbar.classList.add('bg-black/30');
+    }
+  });
+</script>
 </body>
 </html>
